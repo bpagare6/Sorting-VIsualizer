@@ -8,6 +8,7 @@ import getQuickSortAnimation from '../SortingAlgorithms/QuickSort.js';
 import getHeapSortAnimation from '../SortingAlgorithms/HeapSort.js';
 import getBubbleSortAnimation from '../SortingAlgorithms/BubbleSort.js';
 import getInsertionSortAnimation from '../SortingAlgorithms/InsertionSort.js';
+import Tutorial from './Tutorial';
 
 export default class SortingVisualizer extends React.Component {
     constructor(props) {
@@ -258,6 +259,7 @@ export default class SortingVisualizer extends React.Component {
 
         return (
             <div className="sorting-visualizer">
+                <div className="tutorial-screens"><Tutorial></Tutorial></div>
                 <div className="bars">
                     {array.map((value, idx) => (
                         <div
