@@ -21,7 +21,7 @@ export default class Tutorial extends React.Component {
     }
 
     previous_tutorial = async () => {
-        if (this.state.counter > 7) {
+        if (this.state.counter > 1) {
             await this.setState({ counter: this.state.counter - 1 });
         }
     }
